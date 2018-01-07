@@ -4,6 +4,9 @@
   <groupId>net.anschau</groupId>
   <artifactId>cnab-caixa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>cnab-caixa</name>
+  <description>Implementacão da remessa bancária CNAB240-Caixa</description>
 
   <properties>
     <java.version>1.8</java.version>
@@ -37,5 +40,25 @@
       </plugin>
     </plugins>
   </build>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+        <name>Edenir Norberto Anschau</name>
+        <email>edenir.ans@gmail.com</email>
+    </developer>
+  </developers>
+  
+  <scm>
+    <connection>scm:git:git@github.com:edenir-anschau/cnab-caixa</connection>
+    <developerConnection>scm:git:git@github.com:edenir-anschau/cnab-caixa.git</developerConnection>
+    <url>https://github.com:edenir-anschau/cnab-caixa</url>
+  </scm>
 
 </project>
