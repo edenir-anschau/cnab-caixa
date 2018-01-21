@@ -15,7 +15,7 @@ Adicionar no pom.xml:
 <dependency>
   <groupId>net.anschau</groupId>
   <artifactId>cnab-caixa</artifactId>
-  <version>x.y.z</version>
+  <version>1.0.0</version>
 </dependency>
 
 ```
