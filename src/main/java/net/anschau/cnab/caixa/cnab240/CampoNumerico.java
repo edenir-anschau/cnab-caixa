@@ -1,7 +1,5 @@
 package net.anschau.cnab.caixa.cnab240;
 
-import com.google.common.base.Strings;
-
 /**
  * @author Edenir Norberto Anschau (edenir.ans@gmail.com)
  */
@@ -22,7 +20,7 @@ public class CampoNumerico {
 
   @Override
   public String toString() {
-    return Strings.padStart(valor, tamanho, '0');
+    return String.format("%" + tamanho + "s", valor).replace(' ', '0');
   }
   
 }

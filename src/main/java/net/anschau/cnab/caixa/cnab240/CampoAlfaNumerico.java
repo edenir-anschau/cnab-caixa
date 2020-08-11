@@ -1,7 +1,6 @@
 package net.anschau.cnab.caixa.cnab240;
 
 import java.text.Normalizer;
-import com.google.common.base.Strings;
 
 /**
  * @author Edenir Norberto Anschau (edenir.ans@gmail.com)
@@ -28,7 +27,7 @@ public class CampoAlfaNumerico {
     String semAcentosOuCedilha = Normalizer.normalize(valorComTamanhoPermitido,
         Normalizer.Form.NFD);
     semAcentosOuCedilha = semAcentosOuCedilha.replaceAll("[^\\p{ASCII}]", "");
-    return Strings.padEnd(semAcentosOuCedilha.toUpperCase(), tamanho, ' ');
+    return String.format("%-" + tamanho + "s", semAcentosOuCedilha).toUpperCase();
   }
 
   private String corrigeTamanhoDoCampo() {

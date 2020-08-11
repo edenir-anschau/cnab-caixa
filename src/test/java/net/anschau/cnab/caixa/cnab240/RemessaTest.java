@@ -3,10 +3,9 @@ package net.anschau.cnab.caixa.cnab240;
 import static org.junit.Assert.assertEquals;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
-import com.google.common.collect.ImmutableList;
-import net.anschau.cnab.caixa.cnab240.Beneficiario;
 
 /**
  * @author Edenir Norberto Anschau (edenir.ans@gmail.com)
@@ -26,7 +25,7 @@ public class RemessaTest {
     LocalDate emissao = LocalDate.of(2017, 10,02);
     LocalDate vencimento = LocalDate.of(2017, 9, 29);
     Titulo titulo = new Titulo(6.00d, emissao, vencimento, 3, 3, pagador);
-    List<Titulo> titulos = ImmutableList.of(titulo);
+    List<Titulo> titulos = Arrays.asList(titulo);
     
     int numeroRemessa = 1;
     LocalDateTime dataHoraGeracao = LocalDateTime.of(2017, 10, 2, 8, 9, 44);
@@ -80,7 +79,7 @@ public class RemessaTest {
     titulo2 = new Titulo(2500.00d, emissao.plusDays(1), vencimento.plusDays(1), 55, 55, pagador2);
     Titulo titulo3;
     titulo3 = new Titulo(1365.00d, emissao.plusDays(2), vencimento.plusDays(2), 1500, 1500, pagador3);
-    return ImmutableList.of(titulo1, titulo2, titulo3);
+    return Arrays.asList(titulo1, titulo2, titulo3);
   }
   
   private Pagador novoPagador(String nome, String documento, String endereco, String bairro,
