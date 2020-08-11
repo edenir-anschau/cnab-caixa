@@ -3,7 +3,6 @@ package net.anschau.cnab.caixa.cnab240;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import com.google.common.collect.ImmutableList;
 
 /**
  * @author Edenir Norberto Anschau (edenir.ans@gmail.com)
@@ -19,7 +18,7 @@ public class Remessa {
   public Remessa(int numeroRemessa, Beneficiario beneficiario, List<Titulo> titulos) {
     this.numeroRemessa = numeroRemessa;
     this.beneficiario = beneficiario;
-    this.titulos = ImmutableList.copyOf(titulos);
+    this.titulos = titulos;
     this.dataHoraGeracao = LocalDateTime.now();
     this.dataGravacao = LocalDate.now();
   }

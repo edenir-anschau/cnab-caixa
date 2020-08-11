@@ -1,9 +1,9 @@
 package net.anschau.cnab.caixa.cnab240;
 
-import java.io.File;
 import java.io.IOException;
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * @author Edenir Norberto Anschau (edenir.ans@gmail.com)
@@ -17,7 +17,9 @@ public class Arquivos {
  
   private static String readFile(String file) {
     try {
-      return Files.asCharSource(new File("src/test/resources/"+ file), Charsets.US_ASCII).read();
+      Path workDir = Paths.get("src/test/resources/");
+      byte[] bytes = Files.readAllBytes(workDir.resolve(file));
+      return new String(bytes);
     } catch (IOException e) {
       e.printStackTrace();
     }

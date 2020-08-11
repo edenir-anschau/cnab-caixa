@@ -31,3 +31,6 @@ target
 
 # Others
 .DS_Store
+
+.idea
+cnab-caixa.iml
