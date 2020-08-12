@@ -3,7 +3,7 @@
 # cnab-caixa
 > Geração de Remessa de cobrança bancária no layout CNAB240 para Caixa Economica Federal
 
-Documentação CNAB240: [Manual_Leiaute_CNAB240_SIGCB.pdf](http://www.caixa.gov.br/Downloads/cobranca-caixa/Manual_Leiaute_CNAB240_SIGCB.pdf)
+Documentação CNAB240: [Manual_Leiaute_CNAB240_SIGCB.pdf](http://www.caixa.gov.br/Downloads/cobranca-caixa/Manual_de_Leiaute_de_Arquivo_Eletronico_CNAB_240.pdf)
 
 **Obs.:** no momento gera somente a Remessa com os segmentos P e Q.
 
